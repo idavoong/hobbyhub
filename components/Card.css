@@ -1,0 +1,27 @@
+.card {
+  background-color: rgb(188, 204, 154);
+  border-radius: 5px;
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 20%;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgb(195, 123, 137);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+a {
+  color: black;
+}
