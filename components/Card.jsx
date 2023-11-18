@@ -45,7 +45,7 @@ const Card = ({ id, time, title, likes }) => {
       </div>
       <div>
         <button className="likes" onClick={addCount}>
-          Likes: {count}
+          Likes: {likes}
         </button>
         <Link to={"/edit/" + id}>
           <button className="">Edit</button>
