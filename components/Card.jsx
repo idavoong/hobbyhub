@@ -6,35 +6,45 @@ import { Link } from "react-router-dom";
 // eslint-disable-next-line react/prop-types
 const Card = ({ id, time, title, likes }) => {
   const date = new Date(time);
-  const [count, setCount] = useState(0);
+  console.log(date)
+  const [count, setCount] = useState(likes);
 
   useEffect(() => {
-    updateCount();
+    addCount();
   }, [likes]);
 
-  const updateCount = async (event) => {
+  const addCount = async (event) => {
     event.preventDefault();
 
     await supabase
-      .from("Posts")
-      .update({ likes: count + 1 })
+      .from("posts")
+      .update({ likes: likes + 1 })
       .eq("id", id);
 
     setCount((count) => count + 1);
   };
 
+  // const updateCount = async (event) => {
+  //   event.preventDefault();
+
+  //   await supabase
+  //     .from("posts")
+  //     .select()
+  //     .eq("id", id);
+  // }
+
   return (
     <div className="card">
       <div>
         <h3>
-          Posted: {date.getMonth()}-{date.getDay()}-{date.getFullYear()}
+          Posted: {date.getMonth() + 1}-{date.getDate()}-{date.getFullYear()}
         </h3>
         <Link to={"/post/" + id}>
           <h2 className="title">{title}</h2>
         </Link>
       </div>
       <div>
-        <button className="likes" onClick={updateCount}>
+        <button className="likes" onClick={addCount}>
           Likes: {count}
         </button>
         <Link to={"/edit/" + id}>

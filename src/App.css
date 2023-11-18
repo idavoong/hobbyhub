@@ -3,6 +3,17 @@
   padding: 2rem;
 }
 
+.sort {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.sortButton {
+  width: 10rem;
+  margin-left: 1rem;
+}
+
 .posts {
   display: flex;
   flex-direction: column;
