@@ -41,7 +41,11 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://streamable.com/3egz64' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
+https://github.com/idavoong/hobbyhub/assets/60492208/79859a14-e431-4240-b415-a17504dec520
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
